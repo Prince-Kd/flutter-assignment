@@ -24,22 +24,44 @@ class _Screen3State extends State<Screen3> {
             children: [
               Row(
                 children: [
+                  Expanded(
+                      child: Text(
+                    'Screen Image',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  )),
+                  Expanded(
+                      child: Text(
+                    'Number of visits',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ))
+                ],
+              ),
+              Row(
+                children: [
                   Image.asset(
                     'assets/rr.jpg',
                     height: 200,
                     width: 200,
                   ),
-                  Text(
-                    '${model.count1}',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
+                  Expanded(
+                    child: Text(
+                      '${model.count1}',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   )
                 ],
-              ),
-              SizedBox(
-                height: 30,
               ),
               Row(
                 children: [
@@ -48,17 +70,17 @@ class _Screen3State extends State<Screen3> {
                     height: 200,
                     width: 200,
                   ),
-                  Text(
-                    '${model.count2}',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
+                  Expanded(
+                    child: Text(
+                      '${model.count2}',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   )
                 ],
-              ),
-              SizedBox(
-                height: 30,
               ),
               Row(
                 children: [
@@ -67,11 +89,14 @@ class _Screen3State extends State<Screen3> {
                     height: 200,
                     width: 200,
                   ),
-                  Text(
-                    '${model.count3}',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
+                  Expanded(
+                    child: Text(
+                      '${model.count3}',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   )
                 ],
