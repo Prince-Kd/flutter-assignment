@@ -22,9 +22,9 @@ class MainActivity: FlutterActivity(){
     }
 
     private fun startNewActivity(call: MethodCall) {
-        val screen1 = call.argument<Int>("home")
-        val screen2 = call.argument<Int>("second")
-        val screen3 = call.argument<Int>("native")
+        val screen1 = call.argument<String>("home")
+        val screen2 = call.argument<String>("second")
+        val screen3 = call.argument<String>("native")
 
         val intent = Intent(this, SecondActivity::class.java).apply {
             putExtra("home", screen1)
@@ -32,10 +32,6 @@ class MainActivity: FlutterActivity(){
             putExtra("native", screen3)
         }
 
-//Add the bundle to the intent
-        intent.putExtra("1", screen1)
-        intent.putExtra("2", screen2 )
-        intent.putExtra("3", screen3)
         startActivity(intent)
     }
 }

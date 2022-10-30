@@ -21,8 +21,8 @@ class Screen2 extends StatelessWidget {
               onTap: () {},
               child: Image.asset(
                 'assets/gwagon.jpg',
-                height: 200,
-                width: 200,
+                height: 100,
+                width: 100,
               ),
             ),
           )

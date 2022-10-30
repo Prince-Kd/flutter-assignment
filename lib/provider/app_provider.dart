@@ -10,10 +10,10 @@ class AppProvider extends ChangeNotifier {
   getNewActivity() async {
     try {
       count3++;
-      Map<String, int> args = {
-        "home": count1,
-        "second": count2,
-        "native": count3
+      Map<String, String> args = {
+        "home": "$count1",
+        "second": "$count2",
+        "native": "$count3"
       };
       await platform
           .invokeMethod('startNewActivity', args)
