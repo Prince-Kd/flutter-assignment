@@ -11,9 +11,9 @@ import android.widget.ListView
 import android.widget.TextView
 
 class SecondActivity : AppCompatActivity() {
-    val home=intent.getIntExtra("home", 0)
-    val second=intent.getIntExtra("second", 0)
-    val native=intent.getIntExtra("native", 0)
+//    val home=intent.getIntExtra("home", 0)
+//    val second=intent.getIntExtra("second", 0)
+//    val native=intent.getIntExtra("native", 0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
