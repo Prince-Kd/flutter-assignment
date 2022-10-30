@@ -20,7 +20,7 @@ class _Screen3State extends State<Screen3> {
       body: Consumer<AppProvider>(builder: (context, model, child) {
         return Padding(
           padding: const EdgeInsets.all(30.0),
-          child: Column(
+          child: ListView(
             children: [
               Row(
                 children: [

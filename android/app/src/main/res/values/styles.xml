@@ -6,6 +6,13 @@
              the Flutter engine draws its first frame -->
         <item name="android:windowBackground">@drawable/launch_background</item>
     </style>
+    <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionLayout">@layout/activity_second</item>
+
+<!--        <item name="colorPrimary">#7B1FA2</item>-->
+<!--        <item name="colorPrimaryDark">#4A148C</item>-->
+<!--        <item name="colorAccent">@android:color/holo_blue_light</item>-->
+    </style>
     <!-- Theme applied to the Android Window as soon as the process has started.
          This theme determines the color of the Android Window while your
          Flutter UI initializes, as well as behind your Flutter UI while its

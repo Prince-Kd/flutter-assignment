@@ -9,8 +9,15 @@ class AppProvider extends ChangeNotifier {
 
   getNewActivity() async {
     try {
-      await platform.invokeMethod('startNewActivity');
       count3++;
+      Map<String, int> args = {
+        "home": count1,
+        "second": count2,
+        "native": count3
+      };
+      await platform
+          .invokeMethod('startNewActivity', args)
+          .then((value) => count1++);
     } on PlatformException catch (err) {
       print(err.message);
     }

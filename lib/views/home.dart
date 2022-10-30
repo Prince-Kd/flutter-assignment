@@ -21,7 +21,8 @@ class Home extends StatelessWidget {
           Center(
             child: GestureDetector(
               onLongPress: () {
-                appProvider.goToLastScreen("/screen3", context);
+                //appProvider.goToLastScreen("/screen3", context);
+                appProvider.getNewActivity();
               },
               onTap: () {
                 appProvider.goToScreen('/screen2', context);
